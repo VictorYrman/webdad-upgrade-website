@@ -14,3 +14,9 @@ a {
 ul {
   list-style: none;
 }
+
+button,
+input {
+  font-family: inherit;
+  border: none;
+}
