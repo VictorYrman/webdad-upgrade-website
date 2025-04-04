@@ -30,7 +30,7 @@
       property="og:site_name"
       content="Webdad Upgrade | Кем стать в IT сфере?"
     />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="any" />
     <link
       rel="icon"
       href="./assets/images/favicons/icon.svg"
@@ -40,10 +40,18 @@
       rel="apple-touch-icon"
       href="./assets/images/favicons/apple-touch-icon.png"
     />
+    <link
+      rel="preload"
+      as="image"
+      href="./assets/images/article-image.webp"
+      type="image/webp"
+    />
     <link rel="canonical" href="https://webdad.by/it-career" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <script src="./assets/scripts/script.js" defer></script>
+    <script src="./assets/scripts/slider.js" defer></script>
+    <script src="./assets/scripts/burgerMenu.js" defer></script>
+    <script src="./assets/scripts/smiley.js" defer></script>
     <title>Webdad Upgrade | Кем стать в IT сфере?</title>
   </head>
   <body>
@@ -104,11 +112,17 @@
       <article class="article">
         <div class="container">
           <h1 class="article__title">Кем стать в IT сфере?</h1>
-          <img
-            src="./assets/images/article-image.webp"
-            alt="Главное изображение статьи"
-            class="article__image"
-          />
+          <picture>
+            <source
+              srcset="./assets/images/article-image.jpg"
+              type="image/jpeg"
+            />
+            <img
+              src="./assets/images/article-image.webp"
+              alt="Главное изображение статьи"
+              class="article__image"
+            />
+          </picture>
           <p class="article__description">
             Вы определились с выбором своей профессии и уже твердо для себя
             решили, что хотите пойти в <span class="fw-medium">ИТ сферу</span>,
@@ -392,11 +406,18 @@
               >.
             </p>
           </div>
-          <img
-            src="./assets/images/web-designer-image.webp"
-            alt="Web Designer Image"
-            class="point article__image"
-          />
+          <picture>
+            <source
+              srcset="./assets/images/web-designer-image.jpg"
+              type="image/jpeg"
+            />
+            <img
+              src="./assets/images/web-designer-image.webp"
+              alt="Web Designer Image"
+              loading="lazy"
+              class="point article__image"
+            />
+          </picture>
           <div class="point" id="ux/ui-designer">
             <h3>UX/UI-дизайнер</h3>
             <p>
@@ -569,44 +590,56 @@
                 </tbody>
               </table>
             </div>
+          </div>
+          <div class="point">
             <ul class="smiley-list">
               <li>
                 <img
                   src="./assets/images/icons/thumbs-up-skin.svg"
                   alt="Thumbs Up Skin Smiley"
+                  class="smiley-like"
                 />
               </li>
               <li>
-                <img src="./assets/images/icons/heart.svg" alt="Heart Smiley" />
+                <img
+                  src="./assets/images/icons/heart.svg"
+                  alt="Heart Smiley"
+                  class="smiley-heart"
+                />
               </li>
               <li>
                 <img
                   src="./assets/images/icons/smilling-face-with-hearts.svg"
                   alt="Smilling Face With Hearts Smiley"
+                  class="smiley-face-with-hearts"
                 />
               </li>
               <li>
                 <img
                   src="./assets/images/icons/face-with-tears-of-joy.svg"
                   alt="Face With Tears Of Joy Smiley"
+                  class="smiley-face-with-tears"
                 />
               </li>
               <li>
                 <img
                   src="./assets/images/icons/astonished-face.svg"
                   alt="Astonished Face Smiley"
+                  class="smiley-astonished-face"
                 />
               </li>
               <li>
                 <img
                   src="./assets/images/icons/sad-but-relieved-face.svg"
                   alt="Sad But Relieved Face Smiley"
+                  class="smiley-sad-face"
                 />
               </li>
               <li>
                 <img
                   src="./assets/images/icons/pouting-face.svg"
                   alt="Pounting Face Smiley"
+                  class="smiley-pounting-face"
                 />
               </li>
             </ul>
@@ -619,25 +652,52 @@
           <div class="read-more__wrapper">
             <ul class="read-more__list">
               <li class="read-more__item">
-                <img
-                  src="./assets/images/first-card-image.webp"
-                  alt="First Card Image"
-                />
-                <p>Как найти работу в ИТ — план действий</p>
+                <a href="#">
+                  <picture>
+                    <source
+                      srcset="./assets/images/first-card-image.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./assets/images/first-card-image.webp"
+                      alt="First Card Image"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <p>Как найти работу в ИТ — план действий</p>
+                </a>
               </li>
               <li class="read-more__item">
-                <img
-                  src="./assets/images/second-card-image.webp"
-                  alt="Second Card Image"
-                />
-                <p>Какие навыки нужны программисту?</p>
+                <a href="#">
+                  <picture>
+                    <source
+                      srcset="./assets/images/second-card-image.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./assets/images/second-card-image.webp"
+                      alt="Second Card Image"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <p>Какие навыки нужны программисту?</p>
+                </a>
               </li>
               <li class="read-more__item">
-                <img
-                  src="./assets/images/third-card-image.webp"
-                  alt="Third Card Image"
-                />
-                <p>Краткий обзор языков программирования</p>
+                <a href="#">
+                  <picture>
+                    <source
+                      srcset="./assets/images/third-card-image.jpg"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./assets/images/third-card-image.webp"
+                      alt="Third Card Image"
+                      loading="lazy"
+                    />
+                  </picture>
+                  <p>Краткий обзор языков программирования</p>
+                </a>
               </li>
             </ul>
           </div>
@@ -663,25 +723,25 @@
         </div>
       </section>
     </main>
-    <!-- <footer>
-      <div>
-        <div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__menu">
           <a href="#">
             <img
               src="./assets/images/icons/webdad-upgrade-logo-white.svg"
               alt="Webdad Upgrade Logo"
             />
           </a>
-          <nav>
+          <nav class="footer__nav">
             <ul>
-              <li><a href="#">Программы</a></li>
-              <li><a href="#">Навыки</a></li>
-              <li><a href="#">Блог</a></li>
-              <li><a href="#">Лаборатория</a></li>
+              <li><a href="#" class="fw-medium">Программы</a></li>
+              <li><a href="#" class="fw-medium">Навыки</a></li>
+              <li><a href="#" class="fw-medium">Блог</a></li>
+              <li><a href="#" class="fw-medium">Лаборатория</a></li>
             </ul>
           </nav>
         </div>
-        <div>
+        <div class="footer__contacts">
           <div>
             <ul>
               <li>
@@ -705,14 +765,16 @@
               </li>
             </ul>
             <span>|</span>
-            <a href="tel:+375293690077">+ 375 29 369-00-77</a>
+            <a href="tel:+375293690077" class="fw-medium">+ 375 29 369-00-77</a>
           </div>
-          <a href="mailto:mentoring@webdad.by">mentoring@webdad.by</a>
+          <a href="mailto:mentoring@webdad.by" class="fw-medium"
+            >mentoring@webdad.by</a
+          >
           <address>
             224016, Республика Беларусь, г. Брест, ул. Куйбышева, д.9, оф.217
           </address>
         </div>
-        <div>
+        <div class="footer__socials">
           <ul>
             <li>
               <a href="#"
@@ -743,17 +805,19 @@
               /></a>
             </li>
           </ul>
-          <a href="#"
-            >Свидетельство о гос. регистрации № 291667035 от 26.10.2020</a
-          >
-          <a href="#">Политика конфиденциальности</a>
-          <a href="#">Пользовательское соглашение</a>
+          <div class="footer__legal-links">
+            <a href="#"
+              >Свидетельство о гос. регистрации № 291667035 от 26.10.2020</a
+            >
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Пользовательское соглашение</a>
+          </div>
+        </div>
+        <div class="footer__rights">
+          <small>© Webdad Upgrade 2025</small>
+          <small>Сайт сделан и обслуживается студентами Webdad Upgrade</small>
         </div>
       </div>
-      <div>
-        <small>© Webdad Upgrade 2025</small>
-        <small>Сайт сделан и обслуживается студентами Webdad Upgrade</small>
-      </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
