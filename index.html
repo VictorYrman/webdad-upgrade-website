@@ -43,6 +43,7 @@
     <link rel="canonical" href="https://webdad.by/it-career" />
     <link rel="stylesheet" href="./assets/styles/normalize.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <script src="./assets/scripts/script.js" defer></script>
     <title>Webdad Upgrade | Кем стать в IT сфере?</title>
   </head>
   <body>
@@ -70,9 +71,33 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="btn btn--primary header__btn">
-          Начать
-        </button>
+        <div class="header__buttons">
+          <button type="button" class="btn btn--primary header__btn">
+            Начать
+          </button>
+          <button class="burger-menu">
+            <img
+              src="./assets/images/icons/burger-menu.svg"
+              alt="Burger Menu Icon"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Программы</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Навыки</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Блог</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Лаборатория</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main class="main">
@@ -99,58 +124,80 @@
             <nav>
               <ul class="content__list">
                 <li class="content__item">
-                  <a href="#" class="content__link">Web-разработчик</a>
+                  <a href="#web-developer" class="content__link"
+                    >Web-разработчик</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">Frontend-разработчик</a>
+                  <a href="#frontend-developer" class="content__link"
+                    >Frontend-разработчик</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">Backend-разработчик</a>
+                  <a href="#backend-developer" class="content__link"
+                    >Backend-разработчик</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">Fullstack-разработчик</a>
+                  <a href="#fullstack-developer" class="content__link"
+                    >Fullstack-разработчик</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">Software-разработчик</a>
+                  <a href="#software-developer" class="content__link"
+                    >Software-разработчик</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">Mobile-разработчик</a>
+                  <a href="#mobile-developer" class="content__link"
+                    >Mobile-разработчик</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">ML-разработчик</a>
+                  <a href="#ml-developer" class="content__link"
+                    >ML-разработчик</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">Web-дизайнер</a>
+                  <a href="#web-designer" class="content__link">Web-дизайнер</a>
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">UX/UI-дизайнер</a>
+                  <a href="#ux/ui-designer" class="content__link"
+                    >UX/UI-дизайнер</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">ИТ-маркетолог</a>
+                  <a href="#it-marketer" class="content__link">ИТ-маркетолог</a>
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">SMM-специалист</a>
+                  <a href="#smm-specialist" class="content__link"
+                    >SMM-специалист</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">SEO-специалист</a>
+                  <a href="#seo-specialist" class="content__link"
+                    >SEO-специалист</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link"
+                  <a href="#sales-manager" class="content__link"
                     >Менеджер по продажам ИТ-услуг</a
                   >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link">HR-специалист</a>
+                  <a href="#hr-specialist" class="content__link"
+                    >HR-специалист</a
+                  >
                 </li>
                 <li class="content__item">
-                  <a href="#" class="content__link"
+                  <a href="#average-salaries" class="content__link"
                     >Средние зарплаты специалистов</a
                   >
                 </li>
               </ul>
             </nav>
           </div>
-          <div class="point">
+          <div class="point" id="web-developer">
             <h3>Web-разработчик</h3>
             <p>
               Одним из самых
@@ -181,7 +228,7 @@
               внешнего вида и логики одним программистом).
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="frontend-developer">
             <h3>Frontend-разработчик</h3>
             <p>
               Одно из самых востребованных направлений в ИТ сфере.
@@ -214,7 +261,7 @@
               >, который добавляет в язык статическую типизацию.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="backend-developer">
             <h3>Backend-разработчик</h3>
             <p>
               Специалисты данного направления, чаще других
@@ -245,7 +292,7 @@
               другими сервисами по протоколу API.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="fullstack-developer">
             <h3>Fullstack-разработчик</h3>
             <p>
               Эта специализация является
@@ -258,7 +305,7 @@
               жизнеспособных продуктов.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="software-developer">
             <h3>Software-разработчик</h3>
             <p>
               Еще одним популярным направлением на сегодняшний день это
@@ -278,7 +325,7 @@
               (си шарп).
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="mobile-developer">
             <h3>Mobile-разработчик</h3>
             <p>
               Рынок мобильных приложений за последние годы вырос в несколько
@@ -299,7 +346,7 @@
               и другие.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="ml-developer">
             <h3>ML-разработчик</h3>
             <p>
               Учитывая дальнейшее активное
@@ -319,7 +366,7 @@
               направления как:
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="web-designer">
             <h3>Web-дизайнер</h3>
             <p>
               Дизайнер помогает <span class="fw-medium">создать</span> простые и
@@ -344,13 +391,13 @@
                 >Sketch</a
               >.
             </p>
-            <img
-              src="./assets/images/web-designer-image.webp"
-              alt="Web Designer Image"
-              class="article__image"
-            />
           </div>
-          <div class="point">
+          <img
+            src="./assets/images/web-designer-image.webp"
+            alt="Web Designer Image"
+            class="point article__image"
+          />
+          <div class="point" id="ux/ui-designer">
             <h3>UX/UI-дизайнер</h3>
             <p>
               Данный вид специалистов <span class="fw-medium">заботятся</span>,
@@ -361,7 +408,7 @@
               простым и удобным интерфейсом.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="it-marketer">
             <h3>ИТ-маркетолог</h3>
             <p>
               Маркетолог <span class="fw-medium">отвечает</span> за построение и
@@ -371,7 +418,7 @@
               выполнять планы и зарабатывать.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="smm-specialist">
             <h3>SMM-специалист</h3>
             <p>
               Социальные сети плотно интегрировались в жизнь людей. Поэтому
@@ -383,7 +430,7 @@
               охваты рекомендаций и блогеров.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="seo-specialist">
             <h3>SEO-специалист</h3>
             <p>
               Специалисты данного направления активно
@@ -393,7 +440,7 @@
               ответить бизнес что бы получить клиента.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="sales-manager">
             <h3>Менеджер по продажам ИТ-услуг</h3>
             <p>
               Посредник между разработчиком и заказчиком, разработчиком и
@@ -403,7 +450,7 @@
               нуждам решение.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="hr-specialist">
             <h3>HR-специалист</h3>
             <p>
               Работник в области подбора и роста специалистов в рамках компании.
@@ -422,104 +469,106 @@
               аналитически) это очень важно.
             </p>
           </div>
-          <div class="point">
+          <div class="point" id="average-salaries">
             <h3>Средние зарплаты специалистов</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Профессия</th>
-                  <th>Медиана</th>
-                  <th>Мин./Макс.</th>
-                  <th>Средняя ЗП</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Web-разработчик</td>
-                  <td>1 750</td>
-                  <td>300 / 7 500</td>
-                  <td>2 228</td>
-                </tr>
-                <tr>
-                  <td>Frontend-разработчик</td>
-                  <td>2 500</td>
-                  <td>400 / 8 000</td>
-                  <td>2 600</td>
-                </tr>
-                <tr>
-                  <td>Backend-разработчик</td>
-                  <td>2 200</td>
-                  <td>350 / 6 000</td>
-                  <td>2 495</td>
-                </tr>
-                <tr>
-                  <td>Fullstack-разработчик</td>
-                  <td>2 725</td>
-                  <td>450 / 8 500</td>
-                  <td>2 660</td>
-                </tr>
-                <tr>
-                  <td>Software-разработчик</td>
-                  <td>1 000</td>
-                  <td>150 / 3 900</td>
-                  <td>1 083</td>
-                </tr>
-                <tr>
-                  <td>Mobile-разработчик</td>
-                  <td>3 000</td>
-                  <td>400 / 5 200</td>
-                  <td>2 950</td>
-                </tr>
-                <tr>
-                  <td>ML-разработчик</td>
-                  <td>2 000</td>
-                  <td>350 / 5 000</td>
-                  <td>2 660</td>
-                </tr>
-                <tr>
-                  <td>Web-дизайнер</td>
-                  <td>1 000</td>
-                  <td>400 / 4 000</td>
-                  <td>1 356</td>
-                </tr>
-                <tr>
-                  <td>UX/UI-дизайнер</td>
-                  <td>1 530</td>
-                  <td>500 / 3 500</td>
-                  <td>1 719</td>
-                </tr>
-                <tr>
-                  <td>ИТ-маркетолог</td>
-                  <td>1 300</td>
-                  <td>500 / 6 000</td>
-                  <td>1 549</td>
-                </tr>
-                <tr>
-                  <td>SMM-специалист</td>
-                  <td>1 600</td>
-                  <td>250 / 4 650</td>
-                  <td>1 702</td>
-                </tr>
-                <tr>
-                  <td>SEO-специалист</td>
-                  <td>1 350</td>
-                  <td>688 / 4 000</td>
-                  <td>1 849</td>
-                </tr>
-                <tr>
-                  <td>Менеджер по продажам ИТ-услуг</td>
-                  <td>1 075</td>
-                  <td>450 / 5 000</td>
-                  <td>1 696</td>
-                </tr>
-                <tr>
-                  <td>HR-специалист</td>
-                  <td>1 112</td>
-                  <td>300 / 5 000</td>
-                  <td>1 319</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Профессия</th>
+                    <th>Медиана</th>
+                    <th>Мин./Макс.</th>
+                    <th>Средняя ЗП</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Web-разработчик</td>
+                    <td>1 750</td>
+                    <td>300 / 7 500</td>
+                    <td>2 228</td>
+                  </tr>
+                  <tr>
+                    <td>Frontend-разработчик</td>
+                    <td>2 500</td>
+                    <td>400 / 8 000</td>
+                    <td>2 600</td>
+                  </tr>
+                  <tr>
+                    <td>Backend-разработчик</td>
+                    <td>2 200</td>
+                    <td>350 / 6 000</td>
+                    <td>2 495</td>
+                  </tr>
+                  <tr>
+                    <td>Fullstack-разработчик</td>
+                    <td>2 725</td>
+                    <td>450 / 8 500</td>
+                    <td>2 660</td>
+                  </tr>
+                  <tr>
+                    <td>Software-разработчик</td>
+                    <td>1 000</td>
+                    <td>150 / 3 900</td>
+                    <td>1 083</td>
+                  </tr>
+                  <tr>
+                    <td>Mobile-разработчик</td>
+                    <td>3 000</td>
+                    <td>400 / 5 200</td>
+                    <td>2 950</td>
+                  </tr>
+                  <tr>
+                    <td>ML-разработчик</td>
+                    <td>2 000</td>
+                    <td>350 / 5 000</td>
+                    <td>2 660</td>
+                  </tr>
+                  <tr>
+                    <td>Web-дизайнер</td>
+                    <td>1 000</td>
+                    <td>400 / 4 000</td>
+                    <td>1 356</td>
+                  </tr>
+                  <tr>
+                    <td>UX/UI-дизайнер</td>
+                    <td>1 530</td>
+                    <td>500 / 3 500</td>
+                    <td>1 719</td>
+                  </tr>
+                  <tr>
+                    <td>ИТ-маркетолог</td>
+                    <td>1 300</td>
+                    <td>500 / 6 000</td>
+                    <td>1 549</td>
+                  </tr>
+                  <tr>
+                    <td>SMM-специалист</td>
+                    <td>1 600</td>
+                    <td>250 / 4 650</td>
+                    <td>1 702</td>
+                  </tr>
+                  <tr>
+                    <td>SEO-специалист</td>
+                    <td>1 350</td>
+                    <td>688 / 4 000</td>
+                    <td>1 849</td>
+                  </tr>
+                  <tr>
+                    <td>Менеджер по продажам ИТ-услуг</td>
+                    <td>1 075</td>
+                    <td>450 / 5 000</td>
+                    <td>1 696</td>
+                  </tr>
+                  <tr>
+                    <td>HR-специалист</td>
+                    <td>1 112</td>
+                    <td>300 / 5 000</td>
+                    <td>1 319</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <ul class="smiley-list">
               <li>
                 <img
