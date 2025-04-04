@@ -74,7 +74,7 @@ git clone https://github.com/VictorYrman/webdad-upgrade-website.git
 **Веб-разработчик**
 
 <details> <summary>📫 Контакты</summary>
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="16" alt="Telegram"/> https://t.me/theyrman_development
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="16" alt="Telegram"/> [Telegram](https://t.me/theyrman_development)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="16" alt="LinkedIn"/> [LinkedIn](https://www.linkedin.com/in/vitya-yrman-a83508264/)
 
