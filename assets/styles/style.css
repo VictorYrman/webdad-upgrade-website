@@ -115,7 +115,7 @@ th {
 }
 .btn {
   font-size: 1rem;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s ease-in-out;
 }
 .content__link,
 .footer__contacts a,
