@@ -304,6 +304,7 @@ tbody {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -320,27 +321,36 @@ tbody {
 .read-more .container {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  overflow: hidden;
 }
 
 .read-more__title {
   text-align: center;
 }
 
+.read-more__wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 4rem;
+}
+
 .read-more__list {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1.25rem;
+  transition: transform 0.3s ease-in-out;
+  padding: 1rem 0.5rem;
 }
 
 .read-more__item {
-  max-width: 19.5rem;
+  flex: 0 0 100%;
+  max-width: 100%;
   background-color: var(--white-color);
   border-radius: 1rem;
   overflow: hidden;
   cursor: pointer;
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .read-more__item:hover {
@@ -365,6 +375,7 @@ tbody {
 
 .subscribe .container {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
@@ -449,7 +460,53 @@ tbody {
   border: 1px solid var(--grey-color);
 }
 
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+}
+
+.dot {
+  width: 0.375rem;
+  height: 0.375rem;
+  background-color: #b0baaf;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  width: 1.25rem;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+
 /* Media queries */
+
+@media (min-width: 500px) {
+  .read-more__item {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .read-more__list {
+    overflow: visible;
+    transform: none;
+  }
+
+  .read-more__item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 19rem;
+  }
+
+  .dots {
+    display: none;
+  }
+}
 
 @media (max-width: 768px) {
   h1 {
@@ -473,7 +530,7 @@ tbody {
   }
 
   .article .container {
-    padding-block: 5.5rem 10rem;
+    padding-block: 5.5rem;
   }
 
   .article > .container > img.article__image {
@@ -491,22 +548,26 @@ tbody {
   .read-more {
     padding-block: 4rem;
   }
-
-  .smiley-list {
-    display: none;
-  }
 }
 
 @media (max-width: 500px) {
-  p {
-    line-height: 1;
+  .container {
+    padding-inline: 1rem;
   }
 
   .header__btn {
     display: none;
   }
 
+  .article p {
+    line-height: 1.5;
+  }
+
   .mobile-menu {
     width: 50%;
+  }
+
+  .subscribe .container {
+    justify-content: left;
   }
 }
