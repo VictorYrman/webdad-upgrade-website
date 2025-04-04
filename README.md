@@ -1,6 +1,6 @@
 # Webdad Upgrade | Кем стать в IT-сфере? 🌟
 
-![Webdad Upgrade Logo](./assets/images/icons/webdad-upgrade-logo.svg)
+![Webdad Upgrade Logo](./assets/images/icons/webdad-upgrade-logo-white.svg)
 
 ## 🛠 Технологический стек
 
