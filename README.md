@@ -1,4 +1,4 @@
-# Webdad Upgrade | Кем стать в IT-сфере? 🌟
+# Webdad Upgrade | Кем стать в IT-сфере? 🌟 (Выполнено ✅)
 
 ![Webdad Upgrade Logo](./assets/images/icons/webdad-upgrade-logo-white.svg)
 
